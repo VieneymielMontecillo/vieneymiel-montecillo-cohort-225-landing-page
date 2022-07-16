@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Quicksand:wght@300&display=swap');
+
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.navbar {
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header-bg {
+    background-image: url('/massage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.color-overlay {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 6em;
+}
+
+.book-btn {
+    background-color: burlywood;
+    font-size: 1.2em;
+}
+
+.book-btn:hover {
+    background-color: white;
+}
