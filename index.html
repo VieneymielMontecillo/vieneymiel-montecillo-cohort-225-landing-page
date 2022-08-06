@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="landing.css">
     <title>Landing Page</title>
 </head>
 
 <body>
+    <!--ionicons cdn script-->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-sm navbar-dark">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">Santi Spa</a>
             <!--Navigation menu-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
-                aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -28,7 +27,7 @@
                         <a class="nav-link active" aria-current="page" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">ABOUT</a>
+                        <a href="#bookings" class="nav-link">BOOKINGS</a>
                     </li>
                     <li class="nav-item">
                         <a href="#services" class="nav-link">SERVICES</a>
@@ -41,28 +40,139 @@
         </div>
         <!--end of collapse nav-->
     </nav>
+      <!--Hero-->
     <div class="container-fluid header-bg">
         <div class="row">
             <div class="col p-0">
-                <div class="text-light text-center color-overlay">
+                <div class="text-center text-light color-overlay mt-5">
                     <h1>A Unique Spa Experience</h1>
                     <h3>Wellness starts here.</h3>
-                    <button class="btn book-btn mt-5">Book Now</button>
+                    <button class="btn btn-outline-light book-btn mt-5">Book Now</button>
                 </div>
             </div>
         </div>
+       
     </div>
-    <!--end of container-->
 
-    <!--Hero-->
+    <!--end of hero container-->
+    
+    <!--Newsletter-->
+     <section id="newsletter">
+        <div class="newsletter-bg">
+            <div class="container">
+                <div class="row">
+                  <div class="col mt-lg-5 text-center">
+                    <h1 id="news-head">Join our mailing list</h1>
+                  </div>
+                    
+                    <div class="col-12 col-lg-5 mt-lg-5">
+                        <form class="text-center">
+                            <input type="email" class= "input-form" placeholder="Enter Email" required>
+                            <button type="Submit" class="sub-btn">Submit</button>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section> 
 
-    <!--  <section id="mail-list"<div class="container">
-   <h1>Join our mailing list</h1>
-   <form   <input type="email" placeholder="Enter Email"   <button type="Submit" class="sub-button">Submit</button>
-   </form>
-   </section>
-   </div>-->
+    <!--Benefits-->
+    <section>
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>Customized Experiences</h1>
+                    <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar etiam non quam lacus. Eleifend quam adipiscing vitae proin. Sit amet aliquam id diam maecenas ultricies </p>
+                </div>
+                <div class="col-md-8">
+                    <h1>Expert Care</h1>
+                    <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar etiam non quam lacus. Eleifend quam adipiscing vitae proin. Sit amet aliquam id diam maecenas ultricies </p>
+                </div>
+                <div class="col-md-8">
+                    <h1>Organic Skin Products</h1>
+                    <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar etiam non quam lacus. Eleifend quam adipiscing vitae proin. Sit amet aliquam id diam maecenas ultricies </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Services-->
+    <div class="container text-center">
+        <div class="row p-5">
+            <h1 id="service-title">Services</h1>
+            <div class="col col-md-6 col-lg-4">
+                <div class="card" style="width: 23rem;">
+                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" class="card-img-top" alt="essential oil on hand">
+                    <div class="card-body text-light">
+                        <h3>Massage</h3>
+                      <p class="card-text">Choose from Santi Spa's variety</p>
+                      <ul>
+                        <li>Hot Stone Massage</li>
+                        <li>Swedish Massage</li>
+                        <li>Deep Tissue Massage</li>
+                      </ul>
+                      <a href="#" class="btn btn-outline-light">Learn More</a>
+                    </div>
+                </div>  
+            </div>
+            <div class="col col-md-6 col-lg-4">
+                <div class="card" style="width: 23rem;">
+                    <img src="https://images.unsplash.com/photo-1536623975707-c4b3b2af565d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" class="card-img-top" alt="pile of balanced stones">
+                    <div class="card-body text-light">
+                        <h3>Energy Balancing Therapy</h3>
+                      <p class="card-text">Take your mind and body to Oasis</p>
+                      <ul>
+                        <li>Foot Reflexology</li>
+                        <li>Raindrop Therapy</li>
+                        <li>Reiki Therapy</li>
+                      </ul>
+                      <a href="#" class="btn btn-outline-light">Learn More</a>
+                    </div>
+                </div>  
+            </div>
+            <div class="col col-md-6 col-lg-4">
+                <div class="card" style="width: 23rem;">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" class="card-img-top" alt="lady getting a facial">
+                    <div class="card-body text-light">
+                        <h3>Facial</h3>
+                      <p class="card-text">Look and feel like you're glowing</p>
+                      <ul>
+                        <li>Brightening Facial</li>
+                        <li>Hydrating Facial</li>
+                        <li>Acne Reduction Facial</li>
+                      </ul>
+                      <a href="#" class="btn btn-outline-light">Learn More</a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+     <!--Footer-->
+     <footer>
+        <div class="footer-content">
+            <h2>Book an Appointment Today!</h2>
+            <hr>
+            <p>521 Manchester St. Malibu,CA 90263</p>
+            <p>(310) 420-6635</p>
+            <ul class="socials">
+                <li><ion-icon name="logo-facebook"></ion-icon></li>
+                <li><ion-icon name="logo-instagram"></ion-icon></li>
+                <li><ion-icon name="logo-twitter"></ion-icon></li>
+                <li><ion-icon name="logo-youtube"></ion-icon></li>
+                
+            </ul>
+          
+        </div>
+        <div class="footer-bottom">
+            <p>Santi Spa, Copyright &copy 2022</p>
+        </div>
+    </footer>
+ 
+ <!--Bootstrap JS  -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" 
+ integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
 
 </body>
-
 </html>
