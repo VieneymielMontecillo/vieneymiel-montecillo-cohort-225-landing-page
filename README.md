@@ -1,1 +1,1 @@
-Landing Page example project that is currently in progress.
+Landing Page project focused on web design
